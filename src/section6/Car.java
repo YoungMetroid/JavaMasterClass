@@ -1,5 +1,6 @@
 package section6;
 
+<<<<<<< HEAD
 import javax.swing.plaf.IconUIResource;
 
 public class Car {
@@ -42,4 +43,16 @@ public class Car {
         return this.colour;
     }
 
+=======
+public class Car extends Vehicle {
+
+    private int doors;
+    private int engineCapacity;
+    public Car(String name, int doors, int engineCapacity){
+        super(name);
+        this.doors = doors;
+        this.engineCapacity = engineCapacity;
+
+    }
+>>>>>>> a62295dfd77268ccb5bcd829cca1224e41c1a682
 }
