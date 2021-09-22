@@ -1,5 +1,7 @@
 package section6;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[]args){
 
@@ -10,5 +12,22 @@ public class Main {
         dog.run();
         Object obj = dog.getClass();
         System.out.println(obj);
+
+        Wall wall1 = new Wall("North");
+        Wall wall2 = new Wall("West");
+        Wall wall3 = new Wall("South");
+        Wall wall4 = new Wall("East");
+        Ceiling ceiling = new Ceiling(4,255);
+        Bed bed = new Bed("Modern", 2,3,1,1);
+        Lamp lamp = new Lamp("Classic", false, 100);
+
+        Bedroom bedroom = new Bedroom("Felipe",wall1,wall2, wall3, wall4,ceiling,bed,lamp);
+
+        bedroom.makeBed();
+        bedroom.getLamp().turnOn();
+
+
+
+
     }
 }
