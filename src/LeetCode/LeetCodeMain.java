@@ -1,10 +1,13 @@
 package LeetCode;
 
+import LeetCode.IslandsProblem.Anagram;
 import LeetCode.IslandsProblem.MicrosoftTest;
 import LeetCode.IslandsProblem.Palindrome;
-import LeetCode.IslandsProblem.islandsSearchAlgorithm;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 
 public class LeetCodeMain {
 
@@ -20,6 +23,10 @@ public class LeetCodeMain {
         //System.out.println(median.findMedianSortedArrays(new int[]{1,2,3}, new int[] {1,2,3,4}));
         //System.out.println(median.findMedianSortedArrays(new int[]{50,60,70}, new int[] {10,12,23}));
         //System.out.println(median.findMedianSortedArrays(new int[]{50,60,70}, new int[] {10,12,23,30}));
+
+        Anagram anagram = new Anagram();
+        Collection<List<String>> collection = anagram.anagramCollection(new ArrayList<>(Arrays.asList("aae","eaa","eaa","bbb","bba","c","bba","abb","bab","aae")));
+
 
         Palindrome palindrome = new Palindrome();
        // palindrome.longestPalindrome("bb");
