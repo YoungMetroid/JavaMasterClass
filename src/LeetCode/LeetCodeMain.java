@@ -17,6 +17,38 @@ public class LeetCodeMain {
         //islandsSearchAlgorithm islands = new islandsSearchAlgorithm(10,10);
         //TwoSum twoSum = new TwoSum();
 
+        MatrixTraversal matrixTraversal = new MatrixTraversal();
+        matrixTraversal.TraversalUpDown(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+        TestingStaticProperties testingStaticProperties = new TestingStaticProperties();
+
+        TestingStaticProperties.lastName= "Elizalde";
+        testingStaticProperties.printInfo();
+
+        testingStaticProperties.setName("Felipe");
+
+        testingStaticProperties.printInfo();
+
+
+        TestingStaticProperties.lastName= "Loera";
+
+
+
+        TestingStaticProperties testingStaticProperties2 = new TestingStaticProperties();
+
+        testingStaticProperties2.printInfo();
+
+
+        testingStaticProperties2.setName("Brian");
+        TestingStaticProperties.lastName ="Elizalde";
+
+        testingStaticProperties2.printInfo();
+
+
+        TestingStaticProperties testingStaticProperties3 = new TestingStaticProperties();
+        testingStaticProperties.printInfo();
+
+
+
 
         //Median median = new Median();
         //System.out.println(median.findMedianSortedArrays(new int[]{1,2,3}, new int[] {1,2,3}));
