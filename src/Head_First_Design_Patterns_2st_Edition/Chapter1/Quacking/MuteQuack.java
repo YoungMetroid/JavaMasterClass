@@ -1,4 +1,4 @@
-package Head_First_Design_Patterns_1st_Edition.Chapter1.Quacking;
+package Head_First_Design_Patterns_2st_Edition.Chapter1.Quacking;
 
 public class MuteQuack implements QuackBehavior
 {

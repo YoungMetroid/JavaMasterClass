@@ -1,9 +1,9 @@
-package Head_First_Design_Patterns_1st_Edition.Chapter1.Ducks;
+package Head_First_Design_Patterns_2st_Edition.Chapter1.Ducks;
 
-import Head_First_Design_Patterns_1st_Edition.Chapter1.Flying.FlyBehavior;
-import Head_First_Design_Patterns_1st_Edition.Chapter1.Quacking.QuackBehavior;
+import Head_First_Design_Patterns_2st_Edition.Chapter1.Flying.FlyBehavior;
+import Head_First_Design_Patterns_2st_Edition.Chapter1.Quacking.QuackBehavior;
 
-public abstract  class Duck {
+public abstract  class   Duck {
 
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;

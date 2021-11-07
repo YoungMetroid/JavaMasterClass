@@ -1,7 +1,7 @@
-package Head_First_Design_Patterns_1st_Edition.Chapter1.Ducks;
+package Head_First_Design_Patterns_2st_Edition.Chapter1.Ducks;
 
-import Head_First_Design_Patterns_1st_Edition.Chapter1.Flying.FlyWithWings;
-import Head_First_Design_Patterns_1st_Edition.Chapter1.Quacking.Quack;
+import Head_First_Design_Patterns_2st_Edition.Chapter1.Flying.FlyWithWings;
+import Head_First_Design_Patterns_2st_Edition.Chapter1.Quacking.Quack;
 
 public class MallardDuck extends Duck
 {
