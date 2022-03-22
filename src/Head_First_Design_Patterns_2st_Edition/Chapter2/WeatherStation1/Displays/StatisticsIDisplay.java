@@ -19,8 +19,9 @@ public class StatisticsIDisplay implements IObserver, IDisplayElement
     }
 
     @Override
-    public void update(float temperature, float huidity, float pressure)
+    public void update()
     {
+        float temperature = weatherData.getTemperature();
         temperatureSum += temperature;
         numReadings++;
 

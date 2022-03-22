@@ -4,17 +4,18 @@ import Head_First_Design_Patterns_2st_Edition.Chapter2.WeatherStation1.Apis.IObs
 import Head_First_Design_Patterns_2st_Edition.Chapter2.WeatherStation1.Apis.ISubject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class WeatherData implements ISubject
 {
-    private ArrayList observers;
+    private List<IObserver> observers;
     private float temperature;
     private float humidity;
     private float pressure;
 
     public  WeatherData()
     {
-        observers = new ArrayList();
+        observers = new ArrayList<IObserver>();
     }
     public void registerObserver(IObserver o)
     {
@@ -35,10 +36,10 @@ public class WeatherData implements ISubject
         {
             IObserver IObserver = (IObserver)observers.get(index);
 
-            IObserver.update(temperature,humidity,pressure);
+            IObserver.update();
         }
     }
-    public void measuementsChanged()
+    public void measurementsChanged()
     {
         notifyObservers();
     }
@@ -47,6 +48,21 @@ public class WeatherData implements ISubject
         this.temperature =temperature;
         this.humidity = humidity;
         this.pressure = pressure;
-        measuementsChanged();
+        measurementsChanged();
+    }
+
+    @Override
+    public float getTemperature() {
+        return temperature;
+    }
+
+    @Override
+    public float getHumidity() {
+        return humidity;
+    }
+
+    @Override
+    public float getPressure() {
+        return pressure;
     }
 }

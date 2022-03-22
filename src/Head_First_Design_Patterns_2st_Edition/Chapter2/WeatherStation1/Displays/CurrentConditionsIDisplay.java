@@ -18,10 +18,11 @@ public class CurrentConditionsIDisplay implements IObserver, IDisplayElement
     }
 
     @Override
-    public void update(float temperature, float huidity, float pressure)
+    public void update()
     {
-        this.temperature = temperature;
-        this.humidity = huidity;
+
+        this.temperature = weatherData.getTemperature();
+        this.humidity = weatherData.getHumidity();
         display();
     }
 
