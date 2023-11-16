@@ -10,11 +10,11 @@ public class GardenMaker
     public Garden getGarden(String gardenType)
     {
         garden = new VegieGarden();
-        if(gardenType.equals("Perennial"))
+        if("Perennial".equals(gardenType))
         {
             garden = new PerennialGarden();
         }
-        if(gardenType.equals("Annual"))
+        if("Annual".equals(gardenType))
         {
             garden = new AnnualGarden();
         }
