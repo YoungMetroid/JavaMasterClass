@@ -69,7 +69,7 @@ public class FreshPromo {
             {
                 if(groupIndex < group.size())
                 {
-                    if(group.get(groupIndex).equals("anything")) continue;
+                    if("anything".equals(group.get(groupIndex))) continue;
 
                     if (!group.get(groupIndex).equals(shoppingCart.get(cartIndex)))
                     {

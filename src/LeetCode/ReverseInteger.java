@@ -7,7 +7,7 @@ public class ReverseInteger
     {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(x);
-        if(stringBuilder.substring(0,1).equals("-"))
+        if("-".equals(stringBuilder.substring(0,1)))
         {
            String subString = stringBuilder.substring(1);
            stringBuilder.setLength(0);

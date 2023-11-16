@@ -7,7 +7,7 @@ public class PredicateInterfaceExamples
 
     public static void main(String[] args)
     {
-        Predicate<String> greaterThan = i -> i.equals("10");
+        Predicate<String> greaterThan = i -> "10".equals(i);
 
 
         //System.out.println(greaterThan.test(0));

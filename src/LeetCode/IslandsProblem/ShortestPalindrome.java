@@ -9,7 +9,7 @@ public class ShortestPalindrome
 
         int[] indexOfEdgePalindrome = longestPalindrome(nonePalindrome);
 
-        if(nonePalindrome.equals(""))
+        if("".equals(nonePalindrome))
         {
             return  nonePalindrome;
         }
@@ -40,7 +40,7 @@ public class ShortestPalindrome
     {
         this.nonePalindrome = nonePalindrome;
 
-        if(nonePalindrome.equals(""))
+        if("".equals(nonePalindrome))
         {
             return  nonePalindrome;
         }
