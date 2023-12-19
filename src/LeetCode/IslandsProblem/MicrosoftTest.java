@@ -65,9 +65,11 @@ public class MicrosoftTest {
             //Since Hashmap have unique keys, the put function just overwrites the old value
             if(map.containsKey(s.charAt(count)))
             {
+                {
                 int value = map.get(s.charAt(count));
                 value++;
                 map.put(s.charAt(count),value);
+            }
             }
 
             // If the key does not exist i put the key in the map and assign it the value one since its

@@ -9,11 +9,13 @@ public class ReverseInteger
         stringBuilder.append(x);
         if("-".equals(stringBuilder.substring(0,1)))
         {
+            {
            String subString = stringBuilder.substring(1);
            stringBuilder.setLength(0);
            stringBuilder.append(subString);
            stringBuilder.reverse();
            stringBuilder.insert(0,"-");
+        }
         }
         else stringBuilder.reverse();
 
