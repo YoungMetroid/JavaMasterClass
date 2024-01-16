@@ -11,17 +11,16 @@ public class switch_statements {
         char one = '1';
         switch (one)
         {
-            default:
-                System.out.println("Weekday");
-
-            break;
             case '1':
                 System.out.println("Sunday");
                 break;
             case 6:
                 System.out.println("Saturday");
                 break;
+default:
+                System.out.println("Weekday");
 
+            break;
         }
     }
 }

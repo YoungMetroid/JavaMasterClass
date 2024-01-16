@@ -13,11 +13,10 @@ public class SwitchExamples {
         switch(days)
         {
             case 1: System.out.println(1);
-            default:
-                System.out.println(0);
             case 2:  System.out.println(2);
             break;
-        }
+default:
+                System.out.println(0);        }
 
 
         //Using const
@@ -27,8 +26,6 @@ public class SwitchExamples {
 
         switch (days)
         {
-            default:
-                System.out.println(0);
             case num1:
                 System.out.println(1);
 
@@ -38,7 +35,8 @@ public class SwitchExamples {
             case num3:
                 System.out.println(3);
                 break;
-
+default:
+                System.out.println(0);
         }
 
     }
