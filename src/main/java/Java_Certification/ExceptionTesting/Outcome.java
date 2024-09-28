@@ -1,6 +1,9 @@
 package Java_Certification.ExceptionTesting;
 
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Outcome {
 
     static int x= 0;
@@ -9,12 +12,20 @@ public class Outcome {
 
         int x = 0b1;
         int y = 0xF;
-              System.out.println( x/y);
+        System.out.println( x/y);
         Outcome outcome = new Outcome();
         outcome.exceptionTest1(args);
 
 
         outcome.exceptionTest2();
+
+        B b = new B();
+        try {
+            b.test();
+        }
+        catch (FileNotFoundException ex){
+            ex.printStackTrace();
+        }
     }
 
 
@@ -54,6 +65,9 @@ public class Outcome {
         {
             System.out.println("Class Cast Exception");
         }
+        catch(NullPointerException ex){
+            System.out.println("Caught Null pointer exception");
+        }
         finally {
             System.out.println("Final");
         }
@@ -64,10 +78,18 @@ class A {
     public Object supply(){
         return null;
     }
+
+    public void test() throws IOException {
+
+    }
 }
 class B extends A{
     public Object supply() throws NullPointerException
     {
         return null;
+    }
+    @Override
+    public void test() throws FileNotFoundException{
+
     }
 }

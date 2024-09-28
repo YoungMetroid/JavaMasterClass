@@ -1,33 +1,25 @@
 package LeetCode;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.Arrays;
 
 public class Regular_Expression_Matching {
 
-    public boolean isMatch(String s, String p) {
-        int stringIndex = 0;
-        int patternIndex = 0;
-        char currentPattern = ' ';
-
-        boolean inRepeat = false;
-
-        for(int i = 0; i < p.length(); i++) {
+    public static void main(String... args){
 
 
-            if (i + 1 < p.length()) {
-                if (p.charAt(i + 1) == '*') {
-                    inRepeat = true;
-                    currentPattern = p.charAt(i);
-                    i++;
-                    continue;
-                }
-            }
+
+    }
+
+    public static boolean isMatch(String s, String pattern, int i,int j){
+
+        if(i == s.length()-1 || j == pattern.length()-1){
+            return s.charAt(i) == pattern.charAt(j);
         }
+            isMatch(s,pattern,i+1,j+i);
+            isMatch(s,pattern,i+1,j);
+            isMatch(s,pattern,i,j+1);
+
 
         return false;
     }
-
 }

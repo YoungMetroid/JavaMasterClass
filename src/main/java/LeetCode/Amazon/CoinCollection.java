@@ -5,8 +5,6 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
-
-
 public class CoinCollection
 {
     public class Sequence{
@@ -50,7 +48,7 @@ public class CoinCollection
 
             int leftSum = getLeftCoinFLips(coinList,i);
             int rightSum = getRightCoinFlips(coinList,i);
-            min  =  (leftSum + rightSum) < min ? (leftSum + rightSum) : min;
+            min  = Math.min((leftSum + rightSum), min);
         }
 
         return min;

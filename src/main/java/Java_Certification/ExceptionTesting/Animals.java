@@ -1,6 +1,9 @@
 package Java_Certification.ExceptionTesting;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Animals {
 
@@ -9,10 +12,15 @@ public class Animals {
 
        Animal animal = new Dog();
        animal.eat();
+       animal.sleep();
 
 
        Dog dog = new Dog();
+       dog.sleep();
        dog.eat();
+
+        List<Animal> animalList = new ArrayList<Animal>(Arrays.asList(dog,animal));
+        animalList.forEach(Animal::sleep);
 
        Wolf wolf = new Huskey();
        wolf.eat();
@@ -41,11 +49,18 @@ public class Animals {
         public void eat(){
             System.out.println("Animals");
         }
+        protected void sleep(){
+            System.out.println("Animal is sleeping");
+        }
     }
 
     public static class Dog extends Animal{
         public void eat(){
             System.out.println("Dog eats");
+        }
+        @Override
+        protected  void sleep(){
+            System.out.println("Dog is sleeping");
         }
     }
 
