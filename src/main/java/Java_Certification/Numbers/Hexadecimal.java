@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Hexadecimal {
 
-    static Map<Integer,String> decToHex = new HashMap<>(){{
+    static Map<Integer,String> decToHex = new HashMap<Integer,String>(){{
         put(0,"0");
         put(1,"1");
         put(2,"2");

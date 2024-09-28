@@ -8,6 +8,23 @@ public class One {
     public static void main(String []args){
 
         //Empieza el programa a correr
+
+        Employee employee = new Employee();
+
+        Optional<Employee> employeeName = Optional.ofNullable(employee);
+        String s = "As something";
+        Optional<String> ss = Optional.ofNullable(s);
+
+
+        String sss = ss.orElse("unknown");
+        System.out.println(sss);
+
+        String r = employeeName.get().name;
+        String result = employeeName.map(Employee::getName)
+                .orElse("not specified");
+
+        System.out.println(result);
+
         List<Employee> employeeList = new ArrayList<>();
 
 
@@ -70,8 +87,5 @@ public class One {
            int c = count.get(p.getKey());
            System.out.println(p.getKey() + " : " + p.getValue()/c);
        }
-
-
-
     }
 }

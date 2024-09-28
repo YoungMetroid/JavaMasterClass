@@ -39,8 +39,6 @@ public class AmericanShortHair implements Cat{
         ash.meow();
         System.out.println(ash.legCount());
 
-
-
         Device device = new MiniDevice();
         Device device2 = new Device();
 

@@ -1,15 +1,65 @@
 package Java_Certification.ArrayTesting;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static  java.util.Arrays.sort;
+
 public class ArrayTest2 {
+
+
+    static int x = 10;
+    static int y = x;
+    static {
+        int x= 1;
+        y = x;
+    }
 
     public static  void main (String []args)
     {
 
-        //These 2 array declarations are the same;
-        //They have no array size delcared and are empty.
-        final int []farray = new int[0];
-        final int []farray2 = new int[]{};
+        List<Integer> list = new ArrayList<>();
+       int  y = 10;
+       int x = 10;
+       if(x != 10 && y++==11);
+       System.out.println(x);
+       if(y==11 | ++x == 11)
+           y+=10;
 
+        System.out.println(y);
+
+
+        StringBuilder s = new StringBuilder("Whis");
+        s.append(
+                "labs"
+        );
+        s.setLength(7);
+        System.out.println(s);
+
+        //These 2 array declarations are the same;
+        //They have no array size declared and are empty.
+        final int []farray = new int[0];
+
+        //Regular initialization
+        int[] arrRegular1 = new int[3];
+        arrRegular1[0] = 10;
+        //Reinitialize array with specified values using anonymous style
+        arrRegular1 = new int[]{1,2,3};
+
+        //Anonymous Arrays
+        int [] arrAnonymous = new int[]{1,2,3};
+        int [] arrAnonymous2;
+        arrAnonymous2= new int[]{1,2,3};
+
+
+        //Array constants this type of declaration only works when creating the array.
+        int[] arrConsts1 = {1,2,3,4};
+
+
+
+        int []farray2  = {1,2,3};
+        sort(farray2);
+        double[] d;
 
         final int [] farray3;
         farray3 = new int[2];

@@ -6,8 +6,20 @@ import java.io.IOException;
 
 public class WeirdStuff {
 
+    enum Day{
+        SUNDAY,
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY;
+    }
     public static void main(String args[]) {
 
+        for(Day var_1: Day.values()){
+            System.out.println(var_1);
+        }
 
         System.out.println(true | (false ^ true));
         System.out.println((true | false ^ true));

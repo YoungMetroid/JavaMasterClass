@@ -1,5 +1,7 @@
 package Java_Certification.Initialization;
 
+import java.util.Arrays;
+
 public class NullOrDefault {
 
     //Non Static values are all null
@@ -64,8 +66,13 @@ public class NullOrDefault {
     {
 
         int []array3 = new int[3];
+
+        Arrays.stream(array3).forEach(System.out::println);
+
         int [][]mArray3 = new int[3][];
+
         int [][]mArray4 = new int[3][3];
+        System.out.println(mArray4[0][0]);
 
         String [][]strMultiArray3 = new String[3][];
         String [][]strMultiArray4 = new String[3][3];
