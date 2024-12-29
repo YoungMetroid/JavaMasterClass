@@ -20,7 +20,9 @@ public class secondsMinuteChallenge {
             if(hours < 10)
                 hoursString = "0" + hoursString;
             if(mins < 10)
-            minsString = "0" + minsString;
+            {
+                minsString = "0" + minsString;
+            }
             if(seconds < 10)
                 secondsString = "0" + secondsString;
 
